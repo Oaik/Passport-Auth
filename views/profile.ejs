@@ -1,0 +1,11 @@
+<%- include('layouts/header'); -%>
+    <%- include('layouts/nav'); -%>
+        <header>
+            <h1>Welcome to your profile, <%= user.username %></h1>
+        </header>
+        <main>
+            <h2>Extra information</h2>
+            <p>Your thumbnail</p>
+            <img src="<%= user.thumbnail %>" alt="" />
+        </main>
+<%- include('layouts/footer'); -%>
